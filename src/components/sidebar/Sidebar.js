@@ -1,5 +1,6 @@
 import "./Sidebar.css";
 import mulher from "../../assets/mulher-de-oculos.svg";
+import { Link } from 'react-router-dom';
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
   return (
@@ -26,7 +27,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
         <h2>GENERAL</h2>
         <div className="sidebar__link">
           <i className="fa fa-user-secret" aria-hidden="true"></i>
-          <a href="#">Overview</a>
+          <Link to="/">Overview</Link>
         </div>
         <div className="sidebar__link">
           <i className="fa fa-building-o"></i>
@@ -47,7 +48,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
         <h2>MANAGEMENT</h2>
         <div className="sidebar__link">
           <i className="fa fa-users"></i>
-          <a href="#">Customers</a>
+          <Link to="/users"> Customers</Link>
         </div>
         <div className="sidebar__link">
           <i className="fa fa-shopping-cart"></i>

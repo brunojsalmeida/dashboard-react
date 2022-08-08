@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { Component, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Sidebar from "./components/sidebar/Sidebar";
 
 import Routes from './Routes';
+
 
 const App = () => {
   const [sidebarOpen, setsidebarOpen] = useState(false);
